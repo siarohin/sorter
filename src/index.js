@@ -24,13 +24,13 @@ class Sorter {
         if (indices.length > 1) {
             indices.sort(this.arr.compare);
 
-            var array = [];
-            for (var i = 0; i < indices.length; i++) {
+            let array = [];
+            for (let i = 0; i < indices.length; i++) {
                 array[i] = this.arr[indices[i]];
             }
             
             array.sort(this.compare);
-            for (var i = 0; i < array.length; i++) {
+            for (let i = 0; i < array.length; i++) {
                 this.arr[indices[i]] = array[i];
             }
 
